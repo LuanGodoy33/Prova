@@ -1,0 +1,19 @@
+<div class="button-container">
+  <div class="input-container">
+    <input type="text" placeholder="Nome" [(ngModel)]="nome">
+    <button (click)="Adicionar()">Adicionar</button>
+
+    <input type="text" placeholder="ID" [(ngModel)]="id">
+    <input *ngIf="mostrarInputNome" type="text" placeholder="Novo Nome" [(ngModel)]="nome">
+    <button (click)="Alterar()">Alterar</button>
+
+    <input type="text" placeholder="ID" [(ngModel)]="id">
+    <button (click)="ObterPorId()">Obter Por Id</button>
+
+    <button (click)="ObterTodos()">Obter Todos</button>
+
+    <input type="text" placeholder="ID" [(ngModel)]="id">
+    <button (click)="Deletar()">Deletar</button>
+
+  </div>
+</div>
